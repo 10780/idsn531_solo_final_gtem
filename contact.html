@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/media-utilities.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>IDSN531 Solo Final</title>
+</head>
+<body>  
+    <header>
+        <h1>Hello</h1>
+        <nav>
+            <div class="navbar">
+                <div class="topnav-menu">
+                    <a href="about.html">About</a>
+                    <a href="highlights.html">Highlights</a>
+                    <a href="contact.html">Contact</a>
+                    <a class="active" href="index.html">Home</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="#" method="post" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="name-error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="email-error"></span>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="error-message" id="subject-error"></span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="message-error"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <br class="xlarge">
+    <footer>
+        <p>© 2025 IDSN531</p>
+    </footer>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
